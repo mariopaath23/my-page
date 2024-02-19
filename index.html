@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario's Profile</title>
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- Font Setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+</head>
+<body class="transition-background">
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="assets/images/Mario_logo.png" alt="Logo Mario">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resumè</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="big-title">
+            <div class="hero">
+                <h1>Hi, I'm <span style="color: #FC6736">Mario!</span></h1>
+                <p></h>Your <span style='color: #FC6736'id="type-anim"></span>!</p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/IMG_9244.png" alt="My Photo">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="formal-image">
+                <img src="assets/images/1.jpg" alt="My Formal Photo">
+            </div>
+            <div class="profile-container">
+                <div class="full-name highlight">
+                    <h1>Mario Fernando Bernardino Paath</h1>
+                </div>
+                <div class="large-card">
+                    <h1>About Me</h1>
+                     <p>I am a very active person. When it comes to work, I'll do it swiftly while putting a lot of attention into it. I can adapt in various working condition, whether it's just me doing the work or doing the work as a team. I have slight preference in being led, although if given the opportunity to lead, I can get the job done. I'm still working on managing and prioritizing jobs to make sure all can be done before deadlines. I also like to guide, and giving advices to stuff that's related to computers in general.</p>
+                </div>
+                <div class="small-card-container">
+                    <div class="small-card">
+                        <i class="icons highlight fa-solid fa-cake-candles"></i>
+                        <h2>June 23</h2>
+                    </div>
+                    <div class="small-card">
+                        <i class="icons highlight fa-solid fa-location-pin"></i>
+                        <h2>Kotamobagu, North Sulawesi, Indonesia</h2>
+                    </div>
+                    <div class="small-card">
+                        <i class="icons highlight fa-solid fa-square-envelope"></i>
+                        <h2>mariopaath23@gmail.com</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <button class="tablink" onclick="openPage('Certification', this)">
+                <i class="icons fa-solid fa-certificate"></i>
+                <h1>Certification</h1>
+            </button>
+
+            <button class="tablink" onclick="openPage('Experience', this)">
+                <i class="icons fa-solid fa-person-rays"></i>
+                <h1>Experience</h1>
+            </button>
+
+            <button class="tablink" onclick="openPage('Skills', this)">
+                <i class="icons fa-solid fa-check"></i>
+                <h1>Skills</h1>
+            </button>
+
+            <button class="tablink" onclick="openPage('Awards', this)">
+                <i class="icons fa-solid fa-award"></i>
+                <h1>Awards</h1>
+            </button>
+
+            <div id="Certification" class="tabcontent">
+                <div class="cert-card-container">
+                    <div class="cert-card">
+                        <h1>C++ Beginner Course - Sololearn</h1>
+                        <p>Credential ID CT-J4WWMD2</p>
+                    </div>
+                    <div class="cert-card">
+                        <h1>More to come...</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Experience" class="tabcontent">
+                <div class="exp-card-container">
+                    <div class="exp-card">
+                        <h2>2023</h2>
+                        <h1>Member of Publication and Documentation of 2023 Recollection Event Committee</h1>
+                        <h3>UPK-KMK-FT-UNSRAT</h3>
+                    </div>
+                    <div class="exp-card">
+                        <h2>2023</h2>
+                        <h1>Member of Publication and Documentation of 2023 Social Service Committee</h1>
+                        <h3>UPK-KMK-FT-UNSRAT</h3>
+                    </div>
+                    <div class="exp-card">
+                        <h2>2023</h2>
+                        <h1>Full Stack Developer of Software Engineering Project</h1>
+                        <h3>Universitas Sam Ratulangi</h3>
+                    </div>
+                    <div class="break"></div>
+                    <div class="exp-card">
+                        <h2>2023</h2>
+                        <h1>Member of Mobile Development Division</h1>
+                        <h3>UNSRAT IT Community</h3>
+                    </div>
+                    <div class="exp-card">
+                        <h2>2023</h2>
+                        <h1>Member of Multimedia Division</h1>
+                        <h3>UNSRAT IT Community</h3>
+                    </div>
+                    <div class="exp-card">
+                        <h2>2023</h2>
+                        <h1>DevOps Engineer at Techofest 2023</h1>
+                        <h3>UNSRAT IT Community</h3>
+                    </div>
+                    <div class="break"></div>
+                    <div class="exp-card">
+                        <h2>2024</h2>
+                        <h1>Committee Member of Web Development's Back End Division</h1>
+                        <h3>UNSRAT IT Community</h3>
+                    </div>
+                    <div class="exp-card">
+                        <h2>2024</h2>
+                        <h1>DevOps Engineer of HME-FT UNSRAT's Website</h1>
+                        <h3>Himpunan Mahasiswa Elektro FT-UNSRAT</h3>
+                    </div>
+                    <div class="exp-card">
+                        <h1>More to come...</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Skills" class="tabcontent">
+                <div class="skill-card-container">
+                    <div class="skill-card">
+                        <h2>PHP</h2>
+                        <progress value="50" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>PhpMyAdmin</h2>
+                        <progress value="65" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>MySQL</h2>
+                        <progress value="65" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>MariaDB</h2>
+                        <progress value="55" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>HTML5</h2>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="break"></div>
+                    <div class="skill-card">
+                        <h2>CSS3</h2>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Bootstrap</h2>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>JavaScript</h2>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Laravel</h2>
+                        <progress value="50" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Bash</h2>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                    <div class="break"></div>
+                    <div class="skill-card">
+                        <h2>Dart</h2>
+                        <progress value="45" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Flutter</h2>
+                        <progress value="25" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Python</h2>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>C++</h2>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Nginx</h2>
+                        <progress value="85" max="100"></progress>
+                    </div>
+                    <div class="break"></div>
+                    <div class="skill-card">
+                        <h2>Apache</h2>
+                        <progress value="45" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Google Cloud Platform</h2>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Microsoft Azure</h2>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="skill-card">
+                        <h2>Docker</h2>
+                        <progress value="65" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Awards" class="tabcontent">
+                <div class="award-card-container">
+                    <div class="award-card">
+                        <h2>2020</h2>
+                        <h1>1st Winner FLS2N Short Movie Competition - Provincial Level</h1>
+                        <h3>Kemdikbud RI</h3>
+                    </div>
+                    <div class="award-card">
+                        <h2>2022</h2>
+                        <h1>Top 10 Best Graduate</h1>
+                        <h3>Theodorus Senior High School</h3>
+                    </div>
+                    <div class="award-card">
+                        <h1>More to come...</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="project-layout">
+            <div class="title">
+                <h1 class="highlight">Projects</h1>
+            </div>
+            <div class="project-container">
+                 <div class="project-card">
+                    <img src="assets/images/after-movie.jfif" alt="project-1">
+                 </div>
+                 <div class="project-card">
+                    <img src="assets/images/fls2n.jpg" alt="project-2">
+                 </div>
+                 <div class="project-card">
+                    <img src="assets/images/tpr.jpg" alt="">
+                 </div>
+                 <div class="break"></div>
+                 <div class="project-card">
+                    <img src="" alt="">
+                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-layout">
+            <div class="title">
+                <h1 class="highlight-blue">Contact Me</h1>
+            </div>
+            <div class="contact-card-container">
+                <div class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h2>Mario Fernando Bernardino Paath</h2>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h2>@not_mariopaath23</h2>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-at"></i>
+                    <h2>mariopaath23@gmail.com</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer-container">
+        <section class="footer-card">
+            <h1>About</h1>
+            <p>This profile page is one of my projects developed using HTML, CSS and JavaScript. This will be presented as a submission for Dicoding's Beginner Class Final Exam.</p>
+        </section>
+
+        <section class="footer-card">
+            <h1>Links</h1>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resumè</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer-card">
+            <h1>I'm Available Through:</h1>
+            <div class="footer-available">
+                <div><i class="fa-solid fa-map-location-dot"></i></div>
+                <div><p>Kotamobagu, North Sulawesi, Indonesia</p></div>
+                <div><i class="fa-regular fa-envelope"></i></div>
+                <div><p>mariopaath23@gmail.com</p></div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Typed JS Library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#type-anim', {
+        strings: ['DevOps Engineer', 'Back End Developer', 'Video Editor'],
+        typeSpeed: 50,
+        backSpeed:100,
+        loop: true,
+        loopCount: Infinity
+        });
+    </script>
+
+    <!-- Skill Tab Script -->
+    <script src="assets/scripts/skillTab.js"></script>
+</body>
+</html>
