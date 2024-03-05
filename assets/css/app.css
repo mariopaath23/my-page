@@ -100,6 +100,7 @@ main {
 }
 
 .big-title {
+    /* background-color: red; */
     align-items: center;
     display: flex;
     flex-flow: row;
@@ -111,19 +112,21 @@ main {
     color: white;
     text-align: left;
     margin: 1em 8em;
+    width: 50vw;
 }
 
 .hero h1 {
     animation: title-reveal 1s ease-in-out forwards;
-    font-size: 4em;
+    font-size: 3.5rem;
     font-weight: 700;
-    line-height: 0.5;
+    line-height: 1.25;
 }
 
 .hero p {
     animation: title-reveal 1.25s ease-in-out forwards;
     font-size: 2.5em;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .hero-image {
@@ -158,10 +161,11 @@ main {
 }
 
 .about {
+    /* background-color: green; */
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    height: 90vh;
+    align-items: center;
 }
 
 .formal-image {
@@ -170,7 +174,8 @@ main {
 }
 
 .formal-image img {
-    width: 450px;
+    width: auto;
+    max-width: 500px;
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
@@ -180,26 +185,21 @@ main {
     display: flex;
     flex-flow: column;
     margin: 1em 5rem;
-    height: 80vh;
 }
 
 .full-name {
-    font-size: 2.5em; 
+    font-size: 2.5rem; 
     color: #EFECEC;
 }
 
 .large-card {
-    margin-top: -2em;
     color: #EFECEC;
-    flex: 0.4;
 }
 
 .small-card-container {
     display: flex;
-    margin-top: 5em;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
 }
 
 .small-card {
@@ -218,6 +218,7 @@ main {
 }
 
 #resume {
+    /* background-color: blue; */
     height: auto;
 }
 
@@ -259,11 +260,12 @@ main {
 .cert-card {
     background-color: #FC6736;
     color: #EFECEC;
+    display: flex wrap;
     filter: grayscale(100%);
     border-radius: 15px;
     flex: 1 0 25%;
     max-width: 500px;
-    height: 250px;
+    height: auto;
     padding: 75px 25px;
 }
 
@@ -286,7 +288,7 @@ main {
     border-radius: 15px;
     flex: 1 0 25%;
     max-width: 500px;
-    height: 250px;
+    height: auto;
     padding: 25px 25px;
 }
 
@@ -345,7 +347,7 @@ progress::-webkit-progress-bar{
     border-radius: 15px;
     flex: 1 0 25%;
     max-width: 500px;
-    height: 250px;
+    height: auto;
     padding: 25px 25px;
 }
 
@@ -372,7 +374,7 @@ progress::-webkit-progress-bar{
     }
 }
 
-.project-layout{
+#projects{
     display: flex;
     flex-flow: column;
     margin: 1em 8em;
@@ -395,6 +397,22 @@ progress::-webkit-progress-bar{
     max-width: 500px;
     height: 250px;
     object-fit: cover;
+}
+
+#projects .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0;
+    background: #FC6736;
+    transition: .5s ease;
+}
+
+.project-container:hover .overlay {
+    opacity: 1;
 }
 
 .contact-layout{
@@ -454,3 +472,126 @@ footer.footer-container .footer-available {
     display: flex;
     flex-flow: column;
 } 
+
+@media screen and (max-width:600px) {
+
+    /* Navigation Bar */
+    
+    header.navbar-container {
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    header.navbar-container .logo img {
+        margin-left: 30px;
+    }
+
+    header.navbar-container .nav-list ul {
+        display: none;
+    }
+
+    /* Home Page */
+
+    .big-title {
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+    }
+
+    header.navbar-container .logo img {
+        width: 60px;
+    }
+
+    .hero {
+        text-wrap: wrap;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .hero-image {
+        display: none;
+    }   
+
+    .hero h1 {
+        width: 100vw;
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    /* About Page */
+
+    .about {
+        flex-flow: column;
+        max-width: 600px;
+    }
+
+    .full-name {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .formal-image img {
+        display: none;
+    }
+
+    .small-card-container i{
+        font-size: 35px;
+    }
+
+    .small-card-container h2{
+        font-size: 20px;
+    }
+
+    /* Resume Page: Tabs */
+
+    .tablink h1 {
+        display: none;
+    }
+
+    /* Resume Page: Certification */
+    .cert-card-container {
+        gap: 50px;
+    }
+
+    .cert-card {
+        width: 120px;
+    }
+
+    /* Resume Page: Experience */
+    .exp-card-container {
+        gap: 50px;
+    }
+
+    /* Resume Page: Awards */
+    .award-card-container {
+        gap: 50px;
+    }
+
+    /* Project Page*/
+
+    .project-card img {
+        max-width: 75vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Contact Page */
+
+    .contact-card-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Footer */
+
+    footer.footer-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
