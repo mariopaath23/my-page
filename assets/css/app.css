@@ -399,22 +399,6 @@ progress::-webkit-progress-bar{
     object-fit: cover;
 }
 
-#projects .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: 0;
-    background: #FC6736;
-    transition: .5s ease;
-}
-
-.project-container:hover .overlay {
-    opacity: 1;
-}
-
 .contact-layout{
     display: flex;
     flex-flow: column;
@@ -479,7 +463,6 @@ footer.footer-container .footer-available {
     
     header.navbar-container {
         justify-content: space-between;
-        max-width: 600px;
     }
 
     header.navbar-container .logo img {
