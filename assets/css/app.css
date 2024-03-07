@@ -475,15 +475,15 @@ footer.footer-container .footer-available {
 
     /* Navigation Bar */
     
-    header.navbar-container {
+    header .navbar {
         justify-content: space-between;
     }
 
-    header.navbar-container .logo img {
+    header .navbar img {
         margin-left: 30px;
     }
 
-    header.navbar-container .nav-list ul {
+    header .navbar .nav-list ul {
         display: none;
     }
 
@@ -493,10 +493,6 @@ footer.footer-container .footer-available {
         justify-content: center;
         height: 100vh;
         width: 50vw;
-    }
-
-    header.navbar-container .logo img {
-        width: 60px;
     }
 
     .hero {
@@ -532,6 +528,11 @@ footer.footer-container .footer-available {
 
     .formal-image img {
         display: none;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: 200px;
     }
 
     .small-card-container i{
