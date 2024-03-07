@@ -21,22 +21,20 @@
     />
 </head>
 <body class="transition-background">
-    <header class="navbar-container">
-        <div class="logo">
+    <header class="header-container">
+        <div class="navbar">
             <img src="assets/images/Mario_logo.png" alt="Logo Mario">
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resumè</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav-list">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resumè</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
         <section id="home" class="big-title">
             <div class="hero">
                 <h1>Hi, I'm <span style="color: #FC6736">Mario!</span></h1>
@@ -46,19 +44,27 @@
                 <img src="assets/images/IMG_9244.png" alt="My Photo">
             </div>
         </section>
+    </header>
 
+    <main>
         <section id="about" class="about">
             <div class="formal-image">
                 <img src="assets/images/1.jpg" alt="My Formal Photo">
             </div>
             <aside class="profile-container">
-                <div class="full-name highlight">
+                <div name="name" class="highlight">
                     <h1>Mario Fernando Bernardino Paath</h1>
                 </div>
-                <article class="large-card">
-                    <h1>About Me</h1>
-                     <p>I am a very active person. When it comes to work, I'll do it swiftly while putting a lot of attention into it. I can adapt in various working condition, whether it's just me doing the work or doing the work as a team. I have slight preference in being led, although if given the opportunity to lead, I can get the job done. I'm still working on managing and prioritizing jobs to make sure all can be done before deadlines. I also like to guide, and giving advices to stuff that's related to computers in general.</p>
+                <article name="about-me" class="large-card">
+                    <h2 class="highlight">About Me</h2>
+                    <p>I am a very active person. When it comes to work, I'll do it swiftly while putting a lot of attention into it. I can adapt in various working condition, whether it's just me doing the work or doing the work as a team. I have slight preference in being led, although if given the opportunity to lead, I can get the job done. I'm still working on managing and prioritizing jobs to make sure all can be done before deadlines. I also like to guide, and giving advices to stuff that's related to computers in general.</p>
                 </article>
+                <div name="gallery" class="gallery highlight">
+                    <h2>More of Me</h2>'
+                    <img src="assets/images/me1.jpg" alt="gallery1">
+                    <img src="assets/images/me2.jpg" alt="gallery2">
+                    <img src="assets/images/me3.jpg" alt="gallery3">
+                </div>
                 <div class="small-card-container">
                     <div class="small-card">
                         <i class="icons highlight fa-solid fa-cake-candles"></i>

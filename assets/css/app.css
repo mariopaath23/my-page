@@ -49,7 +49,7 @@ body.transition-background {
     height: 0;
 }
 
-header.navbar-container {
+header .navbar {
     background-color: #070F2B;
     width: 100%;
     max-width: 2000px;
@@ -63,23 +63,23 @@ header.navbar-container {
     top: 0;
 }
 
-header.navbar-container .logo img {
+header .navbar img {
     width: 90px;
 }
 
-header.navbar-container .nav-list ul {
+header .navbar .nav-list ul {
     padding-left: 0;
     display: flex;
     justify-content: center;
     gap: 3rem 1rem;
 }
 
-header.navbar-container .nav-list li {
+header .navbar .nav-list li {
     position: relative;
     list-style-type: none;
 }
 
-header.navbar-container .nav-list li a {
+header .navbar .nav-list li a {
     padding: 0.5rem 1.5rem;
     border-radius: 999px;
     text-decoration: none;
@@ -89,14 +89,9 @@ header.navbar-container .nav-list li a {
     transition: all 0.3s ease-in-out;
 }
 
-header.navbar-container .nav-list li:hover a {
+header .navbar .nav-list li:hover a {
     background-color: #FC6736;
     color: white;
-}
-
-main {
-    display: flex;
-    flex-flow: column;
 }
 
 .big-title {
@@ -133,7 +128,7 @@ main {
     padding: 1em 4em;
 }
 
-.hero-image img {
+header .hero-image img {
     animation: hero-image-reveal 1s ease-in-out forwards;
     width: 475px;
 }
@@ -160,6 +155,11 @@ main {
     }
 }
 
+main {
+    display: flex;
+    flex-flow: column;
+}
+
 .about {
     /* background-color: green; */
     display: flex;
@@ -184,12 +184,26 @@ main {
 .profile-container {
     display: flex;
     flex-flow: column;
+    align-content: center;
+    justify-content: center;
     margin: 1em 5rem;
 }
 
-.full-name {
-    font-size: 2.5rem; 
+.profile-container h1 {
+    font-size: 3rem; 
     color: #EFECEC;
+}
+
+.profile-container h2 {
+    color: #EFECEC
+}
+
+.gallery img {
+    margin: 24px;
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 12px;
 }
 
 .large-card {
