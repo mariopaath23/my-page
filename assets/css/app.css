@@ -95,7 +95,6 @@ header .navbar .nav-list li:hover a {
 }
 
 .big-title {
-    /* background-color: red; */
     align-items: center;
     display: flex;
     flex-flow: row;
@@ -161,19 +160,17 @@ main {
 }
 
 .about {
-    /* background-color: green; */
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.formal-image {
+.about-image {
     margin: 1em 8em;
-    animation: formal-image-reveal 1s ease-in-out forwards;
 }
 
-.formal-image img {
+.about-image img {
     width: auto;
     max-width: 500px;
     object-fit: cover;
@@ -222,17 +219,7 @@ main {
     margin: 0.5rem;
 }
 
-@keyframes formal-image-reveal {
-    0% {
-        opacity: 0;
-    }   
-    100% {
-        opacity: 1;
-    }
-}
-
 #resume {
-    /* background-color: blue; */
     height: auto;
 }
 
