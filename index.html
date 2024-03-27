@@ -4,52 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Saya</title>
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="home" class="home-container">
+            <div class="greet">
+                <h1>Halo, saya <span style="color: #891652">Mario!</span></h1>
+            </div>
+        </section>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Halo, saya Mario!</h1>
-        </section>
-
-        <section id="gallery">
-            <h1>Saya, saya, dan istri saya</h1>
-            <img src="/assets/images/IMG_9244.webp" alt="saya" width="250">
-            <img src="/assets/images/WIN_20220125_21_36_48_Pro.webp" alt="masih saya" width="250">
-            <img src="/assets/images/Ruan.Mei.full.4115180.webp" alt="ayang saya" width="250">
+        <section id="gallery" class="gallery-container">
+            <h1>Ini foto saya, saya, dan istri saya</h1>
+            <h5>~ Hover your mouse to view in color ~</h5>
+            <div class="photo-container">
+                <img src="/assets/images/IMG_9244.webp" alt="saya" width="250">
+                <img src="/assets/images/WIN_20220125_21_36_48_Pro.webp" alt="masih saya">
+                <img src="/assets/images/Ruan.Mei.full.4115180.webp" alt="ayang saya">
+            </div>
         </section>
 
         <section id="blog">
-            <h1>Blog</h1>
-            <article>
-                <h2>'Sousou no Frieren' Unveils Additional Cast, Opening Theme, Promo for Second Cours</h2>
-                <img src="https://cdn.myanimelist.net/s/common/uploaded_files/1703267110-10ff8acaa97b994cdc7ba1495c18fccd.jpeg" alt="" width="150">
-                <p>The official website of the Sousou no Frieren (Frieren: Beyond Journey's End) television anime unveiled additional cast, the opening theme, a promotional video, and key visual (pictured) for its second cour on Friday. The anime premiered with a two-hour special on September 29 at 9:00 p.m. on NTV's Friday Road Show programming block, followed by BS NTV and AT-X. The second cour is set to premiere on January 5 at 11:40 p.m.</p>
-                <a href="https://myanimelist.net/news/70317559">Read more...</a>
-            </article>
-            <article>
-                <h2>'Sousou no Frieren' Reveals Additional Pair of Cast</h2>
-                <img src="https://cdn.myanimelist.net/s/common/uploaded_files/1700750342-3de0a378fec71e55bdaa76738827d74f.png" alt="" width="250">
-                <img src="https://cdn.myanimelist.net/s/common/uploaded_files/1700750347-9d83b0bed0d8747efb063c1996f016e8.png" alt="" width="250">
-                <p>The official website of the Sousou no Frieren (Frieren: Beyond Journey's End) television anime revealed a pair of additional cast on Thursday. The anime premiered with a 2-hour special on September 29 at 9:00 p.m. on NTV's Friday Road Show programming block, followed by BS NTV and AT-X.</p>
-                <a href="https://myanimelist.net/news/70191802">Read more...</a>
-            </article>
-            <article>
-                <h2>Manga 'Sousou no Frieren' Gets Anime Adaptation</h2>
-                <img src="https://cdn.myanimelist.net/s/common/uploaded_files/1663039404-8374feb03642246097b8743ffc9290d6.jpeg" alt="" width="150">
-                <p>Publisher Shogakukan opened an official website for an anime adaptation of Kanehito Yamada and Tsukasa Abe's Sousou no Frieren (Frieren: Beyond Journey's End) manga on Tuesday, revealing an announcement visual (pictured).</p>
-                <a href="https://myanimelist.net/news/67443875">Read more...</a>
-            </article>
+            <h1>Beberapa Blog tentang Anime</h1>
+            <div class="article-container">
+                <div class="article-items">
+                    <article>
+                        <h2>'Sousou no Frieren' Unveils Additional Cast, Opening Theme, Promo for Second Cours</h2>
+                        <p>The official website of the Sousou no Frieren (Frieren: Beyond Journey's End) television anime unveiled additional cast, the opening theme, a promotional video, and key visual (pictured) for its second cour on Friday. The anime premiered with a two-hour special on September 29 at 9:00 p.m. on NTV's Friday Road Show programming block, followed by BS NTV and AT-X. The second cour is set to premiere on January 5 at 11:40 p.m.</p>
+                        <a href="https://myanimelist.net/news/70317559">Read more...</a>
+                    </article>
+                </div>
+                <div class="article-items">
+                    <article>
+                        <h2>'Sousou no Frieren' Reveals Additional Pair of Cast</h2>
+                        <p>The official website of the Sousou no Frieren (Frieren: Beyond Journey's End) television anime revealed a pair of additional cast on Thursday. The anime premiered with a 2-hour special on September 29 at 9:00 p.m. on NTV's Friday Road Show programming block, followed by BS NTV and AT-X.</p>
+                        <a href="https://myanimelist.net/news/70191802">Read more...</a>
+                    </article>
+                </div>
+                <div class="article-items">
+                    <article>
+                        <h2>Manga 'Sousou no Frieren' Gets Anime Adaptation</h2>
+                        <p>Publisher Shogakukan opened an official website for an anime adaptation of Kanehito Yamada and Tsukasa Abe's Sousou no Frieren (Frieren: Beyond Journey's End) manga on Tuesday, revealing an announcement visual (pictured).</p>
+                        <a href="https://myanimelist.net/news/67443875">Read more...</a>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -61,16 +86,22 @@
     </main>
 
     <footer>
-        <h2>About</h2>
-        <p>Halaman ini adalah profil singkat saya, dan dibuat untuk memenuhi tugas Pemrograman <strong>Weeb</strong> </p>
+        <section class="footer-card">
+            <h2>About</h2>
+            <p>Halaman ini adalah profil singkat saya, dan dibuat untuk memenuhi tugas Pemrograman <strong>Weeb</strong> </p>
+        </section>
 
-        <h2>Links</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <section class="footer-card">
+            <h2>Links</h2>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

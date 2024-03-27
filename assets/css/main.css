@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFEDD8;
+}
+
+header .navbar{
+    background-color: #891652;
+    width: 100%;
+    max-width: 2000px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+}
+
+header .navbar .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem 1rem;
+} 
+
+header .navbar .nav-list li {
+    position: relative;
+    list-style-type: none;
+}
+
+header .navbar .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #FFEDD8;
+    transition: all  0.1s ease-in-out;
+}
+
+header .navbar .nav-list li:hover a {
+    background-color: #FFEDD8;
+    color: #891652;
+}
+
+.home-container{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.gallery-container .photo-container {
+    align-items: center;
+    display: flex;
+    gap: 12em;
+}
+
+.gallery-container .photo-container img {
+    border-radius: 12px;
+    width: 250px;
+    filter: grayscale(100%);
+}
+
+.gallery-container .photo-container img:hover {
+    animation: de-grayscale 0.25s ease-in-out forwards;
+}
+
+@keyframes de-grayscale {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
+
+#blog {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;  
+    align-items: center;
+    background-color: #240A34;
+    color: #FFEDD8;
+    height: auto;
+    padding: 25px;
+}
+
+.article-container {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+}
+
+.article-items {
+    background-color: #891652;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    width: 768px;
+    padding: 24px;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #EABE6C;
+    color: #240A34;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.footer-card {
+    padding-bottom: 25px;
+    max-width: 320px;
+}
+
+footer .footer-card .footer-links li a {
+    text-decoration: none;
+}
