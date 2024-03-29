@@ -84,6 +84,7 @@ header .navbar .nav-list li:hover a {
     display: flex;
     flex-flow: column;
     height: 100vh;
+    padding: 36px;
 }
 
 .gallery-container h1 {
